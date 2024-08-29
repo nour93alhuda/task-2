@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import './Applications.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEdit } from '@fortawesome/free-solid-svg-icons';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
+// import { faEdit } from '@fortawesome/free-solid-svg-icons';
+// import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+// import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import 'bootstrap/dist/css/bootstrap.min.css';
 const Applications = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const jobs = [
@@ -64,13 +65,13 @@ const Applications = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className="container">
+    <div className="container col-sm-12" >
       
       <div className='jobsearch'>
       <h2>Applications For "job" at "coompany name"</h2>
       
    </div>
-      <div className="jobs-table">
+      <div className="jobs-table col-sm-12" >
         <table>
           <thead>
             <tr>

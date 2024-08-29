@@ -7,6 +7,8 @@ import Jobs from "./components/Main/Jobs";
 import Applications from "./components/Main/Applications"
 import './App.css';
 import { Fragment } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 // import Jobs from "./components/Main/Jobs";
 function App() {
   return (
